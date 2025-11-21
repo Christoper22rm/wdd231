@@ -1,0 +1,168 @@
+:root{
+  --bg:#f8f9fb;
+  --card:#ffffff;
+  --accent:#0b68ff;
+  --muted:#6b7280;
+  --success:#0ea5a4;
+  --danger:#ef4444;
+  --max-width:1100px;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color-scheme: light;
+}
+
+/* Reset-ish */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#111827;
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Layout container */
+.header-inner, .footer-inner {
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:0 1rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* Header */
+.site-header{
+  background:linear-gradient(180deg, #fff, #fbfdff);
+  border-bottom:1px solid rgba(15,23,42,0.04);
+  position:sticky;
+  top:0;
+  z-index:40;
+}
+.header-inner{
+  height:64px;
+}
+.logo{
+  display:inline-flex;
+  gap:0.6rem;
+  align-items:center;
+  text-decoration:none;
+  color:var(--accent);
+  font-weight:600;
+}
+.logo svg{color:var(--accent)}
+.brand-name{font-size:1rem}
+.hamburger{
+  display:inline-flex;
+  background:none;
+  border:0;
+  padding:0.4rem;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+/* Navigation */
+.main-nav ul{
+  list-style:none;
+  display:flex;
+  gap:1rem;
+  margin:0;
+  padding:0;
+}
+.main-nav a{
+  display:inline-block;
+  padding:0.5rem 0.75rem;
+  text-decoration:none;
+  color:inherit;
+  border-radius:8px;
+  transition:background-color 220ms ease, transform 120ms ease;
+}
+.main-nav a:hover, .main-nav a:focus{ background:rgba(11,104,255,0.08); transform:translateY(-2px) }
+.main-nav a.active{ color:var(--accent); font-weight:600; }
+
+/* Hero and main content */
+main{max-width:var(--max-width); margin:1.25rem auto; padding:0 1rem}
+.hero{padding:1.5rem 0}
+.hero h1{margin:0 0 .5rem; font-size:1.75rem}
+.lead{color:var(--muted); margin:0}
+
+/* Sections */
+.content-section{background:var(--card); border-radius:12px; padding:1rem; margin:1rem 0; box-shadow:0 6px 18px rgba(15,23,42,0.03)}
+.content-section h2{margin-top:0}
+
+/* Courses area */
+.controls{display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:1rem}
+.filter-buttons{display:flex; gap:.5rem}
+.filter-btn{
+  background:transparent;
+  border:1px solid rgba(15,23,42,0.06);
+  padding:0.45rem 0.6rem;
+  border-radius:8px;
+  cursor:pointer;
+}
+.filter-btn[aria-pressed="true"], .filter-btn.active{ background:var(--accent); color:#fff; border-color:var(--accent) }
+
+.courses-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem;
+}
+
+/* Course card */
+.course{
+  background:linear-gradient(180deg, #fff, #fcfeff);
+  border:1px solid rgba(15,23,42,0.04);
+  padding:0.9rem;
+  border-radius:10px;
+  display:flex;
+  flex-direction:column;
+  gap:.6rem;
+  min-height:110px;
+}
+.course h3{margin:0;font-size:1rem}
+.course .meta{font-size:.85rem;color:var(--muted)}
+.course.completed{border-left:4px solid var(--success); box-shadow:0 6px 18px rgba(14,165,164,0.04)}
+.course.not-completed{opacity:.95}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(15,23,42,0.04); padding:1rem 0; margin-top:2rem}
+.footer-inner{
+  gap:1rem;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.socials{display:flex; gap:.6rem}
+.socials a{display:inline-flex;align-items:center;justify-content:center;padding:.4rem;border-radius:8px;color:var(--muted);text-decoration:none}
+.socials a:hover{background:rgba(11,104,255,0.06); color:var(--accent)}
+
+/* Responsive behavior */
+@media (max-width:900px){
+  .main-nav{display:none}
+  .hamburger{display:inline-flex}
+  .header-inner{justify-content:space-between}
+}
+@media (min-width:901px){
+  .hamburger{display:none}
+  .main-nav{display:block}
+}
+
+/* When nav open on small screens */
+.main-nav.open{
+  position: absolute;
+  left:0;
+  right:0;
+  top:64px;
+  background:var(--card);
+  border-bottom:1px solid rgba(15,23,42,0.04);
+  padding:0.75rem 1rem;
+}
+.main-nav.open ul{flex-direction:column}
+.main-nav.open a{padding:.6rem 0}
+
+/* Accessibility focus */
+a:focus, button:focus{ outline:3px solid rgba(11,104,255,0.12); outline-offset:2px }
+
+/* Avoid horizontal scroll */
+html,body{overflow-x:hidden}
