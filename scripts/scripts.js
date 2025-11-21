@@ -1,6 +1,4 @@
-// script.js (defer loaded)
 document.addEventListener('DOMContentLoaded', () => {
-  // --- NAV TOGGLE ---
   const navToggle = document.getElementById('navToggle');
   const mainNav = document.getElementById('mainNav');
 
@@ -10,44 +8,31 @@ document.addEventListener('DOMContentLoaded', () => {
     mainNav.classList.toggle('open');
   });
 
-  // --- DYNAMIC FOOTER INFO ---
-  // Current year
   const yearSpan = document.getElementById('year');
   const now = new Date();
   yearSpan.textContent = now.getFullYear();
 
-  // last modified
   const lastModifiedEl = document.getElementById('lastModified');
   lastModifiedEl.textContent = document.lastModified || 'Unknown';
 
-  // --- COURSES DATA & RENDERING ---
-  // Base array of courses (copy this array if you need to edit)
   const courses = [
     { id: 1, code: 'WDD131', title: 'Introduction to Web Development', credits: 3, category: 'WDD', completed: true },
     { id: 2, code: 'WDD231', title: 'Web Frontend Developer 1', credits: 4, category: 'WDD', completed: false },
     { id: 3, code: 'CSE120', title: 'Computer Science Basics', credits: 3, category: 'CSE', completed: true },
     { id: 4, code: 'CSE210', title: 'Data Structures', credits: 4, category: 'CSE', completed: false },
     { id: 5, code: 'WDD241', title: 'Responsive Design', credits: 2, category: 'WDD', completed: true },
-    // add or modify courses here
   ];
-
-  // For demo: ensure "completed" true/false reflect your real progress
-  // If you want to programmatically set completed: change below
-  // courses[1].completed = true; // example
 
   const coursesGrid = document.getElementById('coursesGrid');
   const creditsCount = document.getElementById('creditsCount');
   const filterButtons = document.querySelectorAll('.filter-btn');
 
-  // Render function: accepts filter ("all","WDD","CSE")
   function renderCourses(filter = 'all') {
-    // Filter courses
     const filtered = courses.filter(course => {
       if (filter === 'all') return true;
       return course.category === filter;
     });
 
-    // Render
     coursesGrid.innerHTML = '';
     filtered.forEach(course => {
       const card = document.createElement('article');
@@ -62,20 +47,16 @@ document.addEventListener('DOMContentLoaded', () => {
       coursesGrid.appendChild(card);
     });
 
-    // Credits total (reduce)
     const totalCredits = filtered.reduce((sum, cur) => sum + (Number(cur.credits) || 0), 0);
     creditsCount.textContent = totalCredits;
   }
 
-  // Utility: escape HTML to prevent injection if data changes
   function escapeHtml(str) {
     return String(str).replace(/&/g, '&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
-  // Setup filter button events
   filterButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      // update aria-pressed & visual state
       filterButtons.forEach(b => { b.setAttribute('aria-pressed','false'); b.classList.remove('active'); });
       btn.setAttribute('aria-pressed','true');
       btn.classList.add('active');
@@ -85,10 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Initial render
   renderCourses('all');
 
-  // OPTIONAL: close nav when resizing to large screens
   window.addEventListener('resize', () => {
     if (window.innerWidth > 900) {
       mainNav.classList.remove('open');
