@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+/* HEADER */
+header {
+  background: #1a1a1a;
+  color: white;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo img {
+  width: 40px;
+}
+
+#menuBtn {
+  font-size: 1.5rem;
+  background: none;
+  color: white;
+  border: none;
+}
+
+nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  background: #333;
+}
+
+nav.open {
+  max-height: 300px;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* MAIN */
+main {
+  padding: 1rem;
+}
+
+.view-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.view-buttons button {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* LIST */
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list .card {
+  display: flex;
+  gap: 1rem;
+  text-align: left;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #1a1a1a;
+  color: white;
+  padding: 1rem;
+}

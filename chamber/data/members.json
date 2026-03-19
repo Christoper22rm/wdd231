@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Tech Solutions NY",
+    "address": "123 Manhattan Ave",
+    "phone": "(212) 555-1111",
+    "website": "https://techsolutions.com",
+    "image": "business1.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Central Coffee",
+    "address": "45 Broadway",
+    "phone": "(212) 555-2222",
+    "website": "https://coffee.com",
+    "image": "business2.jpg",
+    "membership": 2
+  },
+  {
+    "name": "NY Fitness Club",
+    "address": "88 5th Ave",
+    "phone": "(212) 555-3333",
+    "website": "https://fitness.com",
+    "image": "business3.jpg",
+    "membership": 1
+  },
+  {
+    "name": "NY Fitness Club",
+    "address": "88 5th Ave",
+    "phone": "(212) 555-3333",
+    "website": "https://fitness.com",
+    "image": "business3.jpg",
+    "membership": 1
+  },
+  {
+    "name": "NY Fitness Club",
+    "address": "88 5th Ave",
+    "phone": "(212) 555-3333",
+    "website": "https://fitness.com",
+    "image": "business3.jpg",
+    "membership": 1
+  },
+  {
+    "name": "NY Fitness Club",
+    "address": "88 5th Ave",
+    "phone": "(212) 555-3333",
+    "website": "https://fitness.com",
+    "image": "business3.jpg",
+    "membership": 1
+  },
+  {
+    "name": "NY Fitness Club",
+    "address": "88 5th Ave",
+    "phone": "(212) 555-3333",
+    "website": "https://fitness.com",
+    "image": "business3.jpg",
+    "membership": 1
+  }
+]

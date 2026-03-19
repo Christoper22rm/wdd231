@@ -1,0 +1,16 @@
+@media (min-width: 32rem) {
+
+  nav {
+    display: flex;
+    max-height: none;
+    justify-content: center;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+
+  #membersContainer.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
