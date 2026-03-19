@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Student homepage">
+  <meta name="author" content="Your Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Site Name</title>
+
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/small.css">
+  <link rel="stylesheet" href="./styles/larger.css">
+
+  <script src="./scripts/navigation.js" defer></script>
+  <script src="./scripts/date.js" defer></script>
+  <script src="./scripts/course.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <div class="top-header">
+    <div class="logo">
+      <img src="./images/dragon.png" alt="logo">
+      <span>Christoper Calvachi</span>
+    </div>
+
+    <button id="menuBtn">☰</button>
+  </div>
+
+  <nav id="navMenu">
+    <a href="#">Home</a>
+    <a href="#">Chamber Project</a>
+    <a href="#">Final Project</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Home</h1>
+
+  <section class="about card">
+    <h2>About Me</h2>
+    <p>
+      Hello, world! I’m Christoper Calvachi, CEO of Brailix and currently a student at BYU. I love programming and providing solid, practical solutions to people, especially businesses looking to improve through artificial intelligence and software. My motto is: If you can dream it, you can achieve it. I studied computer science in high school; I’ve known how to program since I was 13. I used to do it at an internet café, paying 30 cents for half an hour. I served a mission in Bahía Blanca, Argentina; after returning from it, during the pandemic, I spent my time at home programming projects, including some to illuminate the world and some for local events near my community. I took programming courses at Harvard, where I specialized further in artificial intelligence; then I took on the challenge of studying programming at BYU, which has been an enriching experience in my life.
+    </p>
+  </section>
+
+  <section class="photo card">
+    <h2>Student Photo</h2>
+    <img src="./images/me.jpg" alt="photo">
+  </section>
+
+  <section class="courses card">
+    <h2>Web Certificate Courses</h2>
+
+    <div class="filters">
+      <button onclick="filterCourses('all')">All</button>
+      <button onclick="filterCourses('CSE')">CSE</button>
+      <button onclick="filterCourses('WDD')">WDD</button>
+    </div>
+
+    <div id="courseContainer"></div>
+
+    <p id="totalCredits"></p>
+  </section>
+</main>
+
+<footer>
+  <div class="social">
+    <a href="#">LinkedIn</a>
+    <a href="#">GitHub</a>
+    <a href="#">X</a>
+  </div>
+
+  <p>© <span id="currentyear"></span> Your Name - Ecuador</p>
+  <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>

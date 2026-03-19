@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+/* HEADER */
+header {
+  background: #222;
+  color: white;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+}
+
+#menuBtn {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* NAV */
+nav {
+  position: absolute;
+  width: 100%;
+  background: #333;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+nav.open {
+  max-height: 300px;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+}
+
+nav a:hover {
+  background: #555;
+}
+
+/* MAIN */
+main {
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* TITLES */
+h2 {
+  background: #333;
+  color: white;
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* CONTENT */
+.card p {
+  padding: 1rem;
+}
+
+/* IMAGE */
+.photo img {
+  width: 80%;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.filters button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  background: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #bbb;
+}
+
+/* COURSES */
+#courseContainer {
+  padding: 1rem;
+}
+
+#courseContainer div {
+  background: #eee;
+  margin: 5px 0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.completed {
+  background: #4caf50;
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.social a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* ANIMACIONES */
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
+.card:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
