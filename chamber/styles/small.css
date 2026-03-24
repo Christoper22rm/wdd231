@@ -79,16 +79,43 @@ main {
   border-radius: 5px;
 }
 
-/* LIST */
+/* LIST VIEW MEJORADO */
 .list {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .list .card {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 15px;
   text-align: left;
+  padding: 10px;
+}
+
+/* IMAGEN PEQUEÑA */
+.list .card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* CONTENIDO */
+.list .card h3 {
+  margin: 0;
+}
+
+.list .card p {
+  margin: 2px 0;
+  font-size: 0.9rem;
+}
+
+/* OPCIONAL: ORGANIZAR TEXTO */
+.list .card div {
+  display: flex;
+  flex-direction: column;
 }
 
 /* FOOTER */
