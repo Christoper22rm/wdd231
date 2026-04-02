@@ -21,18 +21,13 @@
     margin: 0 auto 2rem auto; 
   }
 
- 
-  .membership-cards {
-    max-width: 600px;
-    margin: auto;
-    display: grid;
-    gap: 1rem;
-  }
-
-
-  .membership-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
+ .membership-cards {
+  max-width: 600px;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
 
  
   .level {
