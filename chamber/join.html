@@ -6,17 +6,22 @@
   <meta name="author" content="Christoper Calvachi">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Join - NY Chamber</title>
+  <title>Join the New York Chamber of Commerce and grow your business network</title>
 
   <link rel="stylesheet" href="./styles/small.css">
   <link rel="stylesheet" href="./styles/larger.css">
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="./styles/joinSmall.css">
-  <link rel="stylesheet" href="./styles/joinLarge.css">
+  <link rel="stylesheet" href="./styles/joinsmall.css">
+  <link rel="stylesheet" href="./styles/joinlarge.css">
 
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="./scripts/join.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -44,50 +49,63 @@
   <!-- FORM -->
   <form method="get" action="thankyou.html">
 
-    <label>First Name
-      <input type="text" name="fname" required autocomplete="given-name">
-    </label>
+  <label>First Name
+    <input type="text" name="fname" required
+      title="Enter your first name"
+      autocomplete="given-name">
+  </label>
 
-    <label>Last Name
-      <input type="text" name="lname" required autocomplete="family-name">
-    </label>
+  <label>Last Name
+    <input type="text" name="lname" required
+      title="Enter your last name"
+      autocomplete="family-name">
+  </label>
 
-    <label>Organization Title
-      <input type="text" name="orgtitle"
-        pattern="[A-Za-z\s\-]{7,}"
-        title="Minimum 7 letters, spaces or hyphens"
-        autocomplete="organization-title">
-    </label>
+  <label>Organization Title
+    <input type="text" name="orgtitle"
+      pattern="[A-Za-z\s\-]{7,}"
+      title="Minimum 7 characters. Only letters, spaces, or hyphens"
+      autocomplete="organization-title">
+  </label>
 
-    <label>Email
-      <input type="email" name="email" required placeholder="example@email.com" autocomplete="email">
-    </label>
+  <label>Email
+    <input type="email" name="email" required
+      title="Enter a valid email address"
+      placeholder="example@email.com"
+      autocomplete="email">
+  </label>
 
-    <label>Phone
-      <input type="tel" name="phone" required autocomplete="tel">
-    </label>
+  <label>Phone
+    <input type="tel" name="phone" required
+      title="Enter your mobile phone number"
+      autocomplete="tel">
+  </label>
 
-    <label>Organization Name
-      <input type="text" name="organization" required autocomplete="organization">
-    </label>
+  <label>Organization Name
+    <input type="text" name="organization" required
+      title="Enter your organization name"
+      autocomplete="organization">
+  </label>
 
-    <label>Membership Level
-      <select name="membership">
-        <option value="np">NP Membership</option>
-        <option value="bronze">Bronze</option>
-        <option value="silver">Silver</option>
-        <option value="gold">Gold</option>
-      </select>
-    </label>
+  <label>Membership Level
+    <select name="membership" title="Select membership level">
+      <option value="np">NP Membership</option>
+      <option value="bronze">Bronze</option>
+      <option value="silver">Silver</option>
+      <option value="gold">Gold</option>
+    </select>
+  </label>
 
-    <label>Description
-      <textarea name="description"></textarea>
-    </label>
+  <label>Description
+    <textarea name="description"
+      title="Describe your organization"></textarea>
+  </label>
 
-    <input type="hidden" id="timestamp" name="timestamp">
+  <input type="hidden" id="timestamp" name="timestamp">
 
-    <input type="submit" value="Submit Application">
-  </form>
+  <input type="submit" value="Submit Application">
+
+</form>
 
   <!-- MEMBERSHIP CARDS -->
   <section class="membership-cards">
@@ -141,7 +159,7 @@
   <p>NY Chamber of Commerce</p>
   <p>Email: info@nychamber.com | Phone: (212) 555-1234</p>
 
-  <p>© <span id="currentyear"></span> Your Name | WDD 231</p>
+  <p>© <span id="currentyear"></span> Christoper Calvachi | WDD 231</p>
   <p id="lastModified"></p>
 </footer>
 
