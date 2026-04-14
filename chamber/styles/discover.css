@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f7fa;
+}
+
+/* HEADER */
+header {
+  background: #1a1a1a;
+  color: white;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo img {
+  width: 40px;
+}
+
+#menuBtn {
+  font-size: 1.5rem;
+  background: none;
+  color: white;
+  border: none;
+}
+
+nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  background: #333;
+}
+
+nav.open {
+  max-height: 300px;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* MAIN */
+.discover {
+  padding: 1rem;
+}
+
+/* VISIT MESSAGE */
+#visit-message {
+  background: #e6f0ff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #0077ff;
+}
+
+/* GRID AREAS */
+.grid-container {
+  display: grid;
+  gap: 1rem;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #1a1a1a;
+  color: white;
+  padding: 1rem;
+}
+
+/* HOVER SOLO EN PC */
+@media (min-width: 641px) {
+  .card img:hover {
+    filter: brightness(1.2);
+    transform: scale(1.03);
+    transition: 0.3s;
+  }
+}
+
+/* SMALL */
+@media (max-width: 640px) {
+  .grid-container {
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h";
+  }
+}
+
+/* MEDIUM */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* LARGE */
+@media (min-width: 1025px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
