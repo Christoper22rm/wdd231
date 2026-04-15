@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Electric Cars Catalog | Electric Vehicles Hub</title>
+  <meta name="description" content="Explore a dynamic catalog of electric vehicles with specifications, pricing, and range. Compare top EV models easily.">
+  <meta name="author" content="Christoper Calvachi">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Electric Cars Catalog | Electric Vehicles Hub">
+  <meta property="og:description" content="Discover electric vehicles, compare features, and find the perfect EV for your lifestyle.">
+  <meta property="og:image" content="https://christoper22rm.github.io/wdd231/final/images/preview.webp">
+  <meta property="og:url" content="https://christoper22rm.github.io/wdd231/final/cars.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./images/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <!-- JS -->
+  <script type="module" src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="logo">EV Hub</div>
+
+    <nav>
+      <button class="menu-btn">☰</button>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cars.html">Cars</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Electric Vehicles Catalog</h1>
+
+  <section id="cars-container" class="cars-grid">
+    <!-- JS renderiza aquí -->
+  </section>
+
+  <dialog id="car-modal">
+    <div class="modal-content">
+      <button id="close-modal">✖</button>
+      <div id="modal-body"></div>
+    </div>
+  </dialog>
+</main>
+
+<!-- MODAL -->
+<dialog id="carModal">
+  <button id="closeModal">✖</button>
+  <div id="modalContent"></div>
+</dialog>
+
+<footer>
+  <p>&copy; 2026 Electric Vehicles Hub</p>
+  <a href="attributions.html">Attributions</a>
+  <a href="https://your-video-link.com" target="_blank">Project Video</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Tesla Model 3",
+    "brand": "Tesla",
+    "range": 513,
+    "price": 39990,
+    "image": "images/tesla-model3.webp",
+    "description": "Affordable electric sedan with impressive range and performance."
+  },
+  {
+    "name": "Tesla Model S",
+    "brand": "Tesla",
+    "range": 652,
+    "price": 79990,
+    "image": "images/tesla-models.webp",
+    "description": "Luxury electric sedan with top-tier performance and long range."
+  },
+  {
+    "name": "Tesla Model X",
+    "brand": "Tesla",
+    "range": 560,
+    "price": 89990,
+    "image": "images/tesla-modelx.webp",
+    "description": "Premium electric SUV with falcon-wing doors and spacious interior."
+  },
+  {
+    "name": "Tesla Model Y",
+    "brand": "Tesla",
+    "range": 531,
+    "price": 49990,
+    "image": "images/tesla-modely.webp",
+    "description": "Compact electric SUV with great efficiency and versatility."
+  },
+  {
+    "name": "Ford Mustang Mach-E",
+    "brand": "Ford",
+    "range": 491,
+    "price": 42995,
+    "image": "images/mustang-mache.webp",
+    "description": "Sporty electric SUV inspired by the Mustang legacy."
+  },
+  {
+    "name": "Chevrolet Bolt EV",
+    "brand": "Chevrolet",
+    "range": 417,
+    "price": 26600,
+    "image": "images/chevy-bolt.webp",
+    "description": "Budget-friendly electric car with solid range and practicality."
+  },
+  {
+    "name": "Nissan Leaf",
+    "brand": "Nissan",
+    "range": 364,
+    "price": 28900,
+    "image": "images/nissan-leaf.webp",
+    "description": "Reliable and widely adopted electric hatchback."
+  },
+  {
+    "name": "Hyundai Ioniq 5",
+    "brand": "Hyundai",
+    "range": 507,
+    "price": 41900,
+    "image": "images/ioniq5.webp",
+    "description": "Futuristic electric crossover with ultra-fast charging capability."
+  },
+  {
+    "name": "Kia EV6",
+    "brand": "Kia",
+    "range": 499,
+    "price": 42900,
+    "image": "images/kia-ev6.webp",
+    "description": "Stylish electric crossover with strong performance and range."
+  },
+  {
+    "name": "Volkswagen ID.4",
+    "brand": "Volkswagen",
+    "range": 443,
+    "price": 38995,
+    "image": "images/vw-id4.webp",
+    "description": "Comfortable electric SUV designed for everyday usability."
+  },
+  {
+    "name": "BMW i4",
+    "brand": "BMW",
+    "range": 484,
+    "price": 52400,
+    "image": "images/bmw-i4.webp",
+    "description": "Luxury electric sedan combining performance and efficiency."
+  },
+  {
+    "name": "Audi Q4 e-tron",
+    "brand": "Audi",
+    "range": 402,
+    "price": 49900,
+    "image": "images/audi-q4.webp",
+    "description": "Compact luxury electric SUV with premium features."
+  },
+  {
+    "name": "Mercedes-Benz EQB",
+    "brand": "Mercedes-Benz",
+    "range": 419,
+    "price": 54900,
+    "image": "images/eqb.webp",
+    "description": "Electric SUV with luxury comfort and optional third-row seating."
+  },
+  {
+    "name": "Rivian R1T",
+    "brand": "Rivian",
+    "range": 505,
+    "price": 73900,
+    "image": "images/rivian-r1t.webp",
+    "description": "Electric pickup truck built for adventure and off-road capability."
+  },
+  {
+    "name": "Lucid Air",
+    "brand": "Lucid",
+    "range": 830,
+    "price": 87400,
+    "image": "images/lucid-air.webp",
+    "description": "High-end luxury EV with industry-leading range and performance."
+  }
+]

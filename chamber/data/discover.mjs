@@ -7,7 +7,7 @@ export const places = [
   },
   {
     name: "Statue of Liberty",
-    address: "Liberty Island, NY 10004",
+    address: "Liberty Island, NY 1000",
     image: "images/liberty.webp",
     description: "A global symbol of freedom and democracy, attracting millions of visitors every year."
   },

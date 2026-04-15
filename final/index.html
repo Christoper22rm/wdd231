@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Electric Vehicles Hub | Explore EV Cars</title>
+  <meta name="description" content="Explore electric vehicles, compare models, and discover the future of sustainable transportation.">
+  <meta name="author" content="Christoper Calvachi">
+
+  <!-- Favicon -->
+<link rel="icon" href="./images/favicon.png">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Electric Vehicles Hub">
+<meta property="og:description" content="Discover and compare electric vehicles easily.">
+<meta property="og:image" content="https://christoper22rm.github.io/wdd231/final/images/preview.webp">
+<meta property="og:url" content="https://christoper22rm.github.io/wdd231/final/index.html">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <!-- JS -->
+  <script type="module" src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div class="header-container">
+    <div class="logo">EV Hub</div>
+
+    <nav>
+      <button class="menu-btn">☰</button>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cars.html">Cars</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Electric Vehicles Hub</h1>
+        <p>Discover the best electric vehicles, compare features, and drive into the future.</p>
+        <a href="cars.html" class="btn">Explore EVs</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="./images/hero.jpg" alt="Electric vehicle" loading="lazy">
+      </div>
+    </section>
+
+    <!-- INFO GRID -->
+    <section class="benefits">
+  <h2>Why Choose Electric Vehicles?</h2>
+
+  <div class="benefits-grid">
+
+    <div class="benefit-card">
+      <h3>⚡ Lower Costs</h3>
+      <p>Electric vehicles reduce fuel and maintenance costs compared to traditional gasoline cars.</p>
+    </div>
+
+    <div class="benefit-card">
+      <h3>🌱 Eco-Friendly</h3>
+      <p>EVs produce zero emissions, helping reduce pollution and protect the environment.</p>
+    </div>
+
+    <div class="benefit-card">
+      <h3>🚀 High Performance</h3>
+      <p>Instant torque and smooth acceleration make electric vehicles fast and efficient.</p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- FEATURED CARDS -->
+    <section class="cards-section">
+      <h2>Featured Electric Vehicles</h2>
+
+      <!-- MODAL -->
+  <dialog id="car-modal">
+  <div class="modal-content">
+    <button id="close-modal">✖</button>
+    <div id="modal-body"></div>
+  </div>
+</dialog>
+
+  </main>
+
+  <!-- MODAL -->
+  <dialog id="carModal">
+    <button id="closeModal">X</button>
+    <div id="modalContent"></div>
+  </dialog>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Electric Vehicles Hub</p>
+    <p><a href="attributions.html">Attributions</a></p>
+
+    <!-- VIDEO LINK -->
+    <p>
+      <a href="https://youtube.com/" target="_blank">Project Demo Video</a>
+    </p>
+  </footer>
+
+  <!-- JS -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
