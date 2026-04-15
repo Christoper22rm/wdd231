@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Contact | EV Hub</title>
-  <meta name="description" content="Get in touch with us to learn more about electric vehicles. Ask questions, request information, and start your journey into EV technology today.">
-  <meta name="author" content="Christopher Calvachi">
+  <!-- SEO -->
+  <title>Contact Us | Electric Vehicles Hub</title>
+  <meta name="description" content="Contact us to learn more about electric vehicles, request information, and get personalized recommendations to start your EV journey today.">
+  <meta name="author" content="Christoper Calvachi">
 
-<!-- Open Graph -->
-  <meta property="og:title" content="Electric Cars Catalog | Electric Vehicles Hub">
-  <meta property="og:description" content="Get in touch with us to learn more about electric vehicles. Ask questions, request information, and start your journey into EV technology today.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact | Electric Vehicles Hub">
+  <meta property="og:description" content="Reach out to us for expert guidance on electric vehicles, comparisons, and recommendations tailored to your needs.">
   <meta property="og:image" content="https://christoper22rm.github.io/wdd231/final/images/preview.webp">
-  <meta property="og:url" content="https://christoper22rm.github.io/wdd231/final/cars.html">
+  <meta property="og:url" content="https://christoper22rm.github.io/wdd231/final/contact.html">
 
   <!-- Favicon -->
   <link rel="icon" href="./images/favicon.png">
@@ -25,7 +26,6 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/contact.css">
-  <link rel="stylesheet" href="./styles/responsive.css">
 
   <!-- JS -->
   <script type="module" src="./scripts/main.js"></script>
@@ -39,12 +39,12 @@
     <div class="logo">EV Hub</div>
 
     <nav>
-      <button class="menu-btn">☰</button>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
 
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="cars.html">Cars</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" aria-current="page">Contact</a>
       </div>
     </nav>
   </div>
@@ -55,35 +55,35 @@
   <h1>Contact Us</h1>
 
   <section class="contact-container">
-    <h2 class="section-title">Contact Form</h2>
+    <h2 class="section-title">Send Us a Message</h2>
 
     <form method="GET" action="thankyou.html">
 
-      <label>
+      <label for="name">
         Full Name
-        <input type="text" name="name" required>
       </label>
+      <input id="name" type="text" name="name" required>
 
-      <label>
+      <label for="email">
         Email
-        <input type="email" name="email" required>
       </label>
+      <input id="email" type="email" name="email" required>
 
-      <label>
+      <label for="brand">
         Favorite EV Brand
-        <select name="brand" required>
-          <option value="">Select</option>
-          <option value="Tesla">Tesla</option>
-          <option value="BYD">BYD</option>
-          <option value="Hyundai">Hyundai</option>
-          <option value="Nissan">Nissan</option>
-        </select>
       </label>
+      <select id="brand" name="brand" required>
+        <option value="">Select</option>
+        <option value="Tesla">Tesla</option>
+        <option value="BYD">BYD</option>
+        <option value="Hyundai">Hyundai</option>
+        <option value="Nissan">Nissan</option>
+      </select>
 
-      <label>
+      <label for="message">
         Message
-        <textarea name="message" rows="4"></textarea>
       </label>
+      <textarea id="message" name="message" rows="4"></textarea>
 
       <button type="submit">Send Message</button>
 
