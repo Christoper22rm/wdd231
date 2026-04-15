@@ -1,0 +1,40 @@
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+
+  .nav-links {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background: none;
+    padding: 0;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+
+  .cars-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero {
+    padding: 3rem;
+  }
+}
