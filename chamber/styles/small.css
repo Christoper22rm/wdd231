@@ -1,10 +1,11 @@
+/* ===== BASE ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background: #f5f5f5;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 header {
   background: #1a1a1a;
   color: white;
@@ -13,6 +14,7 @@ header {
 .top-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -20,17 +22,20 @@ header {
   width: 40px;
 }
 
+/* HAMBURGER */
 #menuBtn {
   font-size: 1.5rem;
   background: none;
   color: white;
   border: none;
+  cursor: pointer;
 }
 
+/* NAV */
 nav {
   max-height: 0;
   overflow: hidden;
-  transition: 0.3s;
+  transition: max-height 0.3s ease;
   background: #333;
 }
 
@@ -45,28 +50,43 @@ nav a {
   text-decoration: none;
 }
 
-/* MAIN */
+/* DESKTOP NAV */
+@media (min-width: 641px) {
+  #menuBtn {
+    display: none;
+  }
+
+  nav {
+    max-height: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav a {
+    display: inline-block;
+  }
+}
+
+/* ===== MAIN ===== */
 main {
   padding: 1rem;
 }
 
-.view-buttons {
-  display: flex;
-  gap: 10px;
+/* ===== VISIT MESSAGE ===== */
+#visit-message {
+  background: #e6f0ff;
+  padding: 1rem;
   margin-bottom: 1rem;
+  border-left: 5px solid #0077ff;
 }
 
-.view-buttons button {
-  flex: 1;
-  padding: 0.5rem;
-}
-
-/* GRID */
-.grid {
+/* ===== GRID ===== */
+.grid-container {
   display: grid;
   gap: 1rem;
 }
 
+/* ===== CARD ===== */
 .card {
   background: white;
   padding: 1rem;
@@ -76,10 +96,10 @@ main {
 
 .card img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
-/* LIST VIEW MEJORADO */
+/* ===== LIST VIEW ===== */
 .list {
   display: flex;
   flex-direction: column;
@@ -94,15 +114,12 @@ main {
   padding: 10px;
 }
 
-/* IMAGEN PEQUEÑA */
 .list .card img {
   width: 80px;
   height: 80px;
   object-fit: cover;
-  border-radius: 8px;
 }
 
-/* CONTENIDO */
 .list .card h3 {
   margin: 0;
 }
@@ -112,13 +129,91 @@ main {
   font-size: 0.9rem;
 }
 
-/* OPCIONAL: ORGANIZAR TEXTO */
 .list .card div {
   display: flex;
   flex-direction: column;
 }
 
-/* FOOTER */
+/* ===== HOVER SOLO DESKTOP ===== */
+@media (min-width: 641px) {
+  .card img:hover {
+    filter: brightness(1.2);
+    transform: scale(1.03);
+    transition: 0.3s;
+  }
+}
+
+/* ===== GRID AREAS ===== */
+
+/* SMALL */
+@media (max-width: 640px) {
+  .grid-container {
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h";
+  }
+
+  .card:nth-child(1) { grid-area: a; }
+  .card:nth-child(2) { grid-area: b; }
+  .card:nth-child(3) { grid-area: c; }
+  .card:nth-child(4) { grid-area: d; }
+  .card:nth-child(5) { grid-area: e; }
+  .card:nth-child(6) { grid-area: f; }
+  .card:nth-child(7) { grid-area: g; }
+  .card:nth-child(8) { grid-area: h; }
+}
+
+/* MEDIUM */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+      "g h";
+  }
+
+  .card:nth-child(1) { grid-area: a; }
+  .card:nth-child(2) { grid-area: b; }
+  .card:nth-child(3) { grid-area: c; }
+  .card:nth-child(4) { grid-area: d; }
+  .card:nth-child(5) { grid-area: e; }
+  .card:nth-child(6) { grid-area: f; }
+  .card:nth-child(7) { grid-area: g; }
+  .card:nth-child(8) { grid-area: h; }
+}
+
+/* LARGE */
+@media (min-width: 1025px) {
+  .grid-container {
+    grid-template-areas:
+      "a b c d"
+      "e f g h";
+  }
+
+  .card:nth-child(1) { grid-area: a; }
+  .card:nth-child(2) { grid-area: b; }
+  .card:nth-child(3) { grid-area: c; }
+  .card:nth-child(4) { grid-area: d; }
+  .card:nth-child(5) { grid-area: e; }
+  .card:nth-child(6) { grid-area: f; }
+  .card:nth-child(7) { grid-area: g; }
+  .card:nth-child(8) { grid-area: h; }
+}
+
+/* ===== ACCESSIBILITY ===== */
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   background: #1a1a1a;
