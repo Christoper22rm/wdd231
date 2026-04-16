@@ -4,7 +4,7 @@
     "brand": "Tesla",
     "range": 513,
     "price": 39990,
-    "image": "images/tesla-model3.webp",
+    "image": "./images/tesla-model-3.webp",
     "description": "Affordable electric sedan with impressive range and performance."
   },
   {
@@ -12,7 +12,7 @@
     "brand": "Tesla",
     "range": 652,
     "price": 79990,
-    "image": "images/tesla-models.webp",
+    "image": "images/tesla-model-s.webp",
     "description": "Luxury electric sedan with top-tier performance and long range."
   },
   {
@@ -20,7 +20,7 @@
     "brand": "Tesla",
     "range": 560,
     "price": 89990,
-    "image": "images/tesla-modelx.webp",
+    "image": "images/tesla-model-x.webp",
     "description": "Premium electric SUV with falcon-wing doors and spacious interior."
   },
   {
@@ -28,7 +28,7 @@
     "brand": "Tesla",
     "range": 531,
     "price": 49990,
-    "image": "images/tesla-modely.webp",
+    "image": "images/tesla-model-y.webp",
     "description": "Compact electric SUV with great efficiency and versatility."
   },
   {
@@ -36,7 +36,7 @@
     "brand": "Ford",
     "range": 491,
     "price": 42995,
-    "image": "images/mustang-mache.webp",
+    "image": "images/ford-mustang-mach-e.webp",
     "description": "Sporty electric SUV inspired by the Mustang legacy."
   },
   {
@@ -44,7 +44,7 @@
     "brand": "Chevrolet",
     "range": 417,
     "price": 26600,
-    "image": "images/chevy-bolt.webp",
+    "image": "images/chevrolet-bolt-ev.webp",
     "description": "Budget-friendly electric car with solid range and practicality."
   },
   {
@@ -60,7 +60,7 @@
     "brand": "Hyundai",
     "range": 507,
     "price": 41900,
-    "image": "images/ioniq5.webp",
+    "image": "images/hyundai-Ioniq-5.webp",
     "description": "Futuristic electric crossover with ultra-fast charging capability."
   },
   {
@@ -76,7 +76,7 @@
     "brand": "Volkswagen",
     "range": 443,
     "price": 38995,
-    "image": "images/vw-id4.webp",
+    "image": "images/volkswagen-id-4.webp",
     "description": "Comfortable electric SUV designed for everyday usability."
   },
   {
@@ -92,7 +92,7 @@
     "brand": "Audi",
     "range": 402,
     "price": 49900,
-    "image": "images/audi-q4.webp",
+    "image": "images/audi-q4-e-tron.webp",
     "description": "Compact luxury electric SUV with premium features."
   },
   {
@@ -100,7 +100,7 @@
     "brand": "Mercedes-Benz",
     "range": 419,
     "price": 54900,
-    "image": "images/eqb.webp",
+    "image": "images/mercedes-benz-eqb.webp",
     "description": "Electric SUV with luxury comfort and optional third-row seating."
   },
   {
