@@ -51,6 +51,12 @@ if (!lastVisit) {
 
 localStorage.setItem("lastVisit", now);
 
+document.querySelectorAll(".card button").forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    alert(places[index].description);
+  });
+});
+
 // FOOTER DATES (SIN INLINE JS)
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
