@@ -2,6 +2,14 @@ import { places } from "../data/discover.mjs";
 
 const container = document.getElementById("cards");
 
+// MENU HAMBURGER
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
+
+menuBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
+});
+
 // CREAR CARDS
 places.forEach(place => {
   const card = document.createElement("div");
@@ -20,8 +28,7 @@ places.forEach(place => {
   container.appendChild(card);
 });
 
-
-// VISIT MESSAGE (LOCALSTORAGE)
+// VISIT MESSAGE
 const message = document.getElementById("visit-message");
 
 const lastVisit = localStorage.getItem("lastVisit");
@@ -43,3 +50,7 @@ if (!lastVisit) {
 }
 
 localStorage.setItem("lastVisit", now);
+
+// FOOTER DATES (SIN INLINE JS)
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
